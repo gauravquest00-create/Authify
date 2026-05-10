@@ -47,7 +47,7 @@ function AppWrapper({ children }) {
           zIndex: 9999,
           fontSize: "13px",
           fontWeight: 500,
-          zIndex: 9999,
+          
         }}
       >
         {theme === "dark" ? "☀️ Light" : "🌙 Dark"}
