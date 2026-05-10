@@ -5,7 +5,7 @@ import "./auth.css";
 
 function Dashboard() {
   const [user, setUser] = useState(null);
-  const [stats, setStats] = useState({
+  const [stats] = useState({
     projects: 12,
     tasks: 28,
     completed: 76
