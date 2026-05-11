@@ -9,18 +9,21 @@ dotenv.config();
 
 const app = express();
 
-// ✅ FIXED CORS - Allow your frontend URLs
+// ✅ CORS - Allow all your frontend URLs
 const allowedOrigins = [
-  
-  "https://authify-zeta.vercel.app"
-  
+  "http://localhost:3000",
+  "https://authify-zeta.vercel.app",
+  "https://authify-pgz8sdgpf-gauravquest00-1690s-projects.vercel.app",
+  "https://frabjous-gaufre-cc6ec9.netlify.app"
 ];
 
+// CORS middleware
 app.use(cors({
   origin: function (origin, callback) {
     // Allow requests with no origin (like mobile apps or curl)
     if (!origin) return callback(null, true);
     if (allowedOrigins.indexOf(origin) === -1) {
+      console.log(`Blocked origin: ${origin}`);
       const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
       return callback(new Error(msg), false);
     }
@@ -30,6 +33,9 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+// ✅ Handle preflight requests explicitly
+app.options('*', cors());
 
 app.use(express.json());
 
