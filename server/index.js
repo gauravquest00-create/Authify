@@ -2,8 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
-
-import authRoutes from "./routes/authRoutes.js";
+import authRoutes from "./routes/authRoutes.js"; 
 import connectDB from "./config/db.js";
 
 dotenv.config();
@@ -12,9 +11,9 @@ const app = express();
 
 // ✅ FIXED CORS - Allow your frontend URLs
 const allowedOrigins = [
-  "http://localhost:3000",
-  "https://authify-zeta.vercel.app",
-  "https://frabjous-gaufre-cc6ec9.netlify.app"
+  
+  "https://authify-zeta.vercel.app"
+  
 ];
 
 app.use(cors({
