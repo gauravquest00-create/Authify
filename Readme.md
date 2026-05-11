@@ -339,3 +339,12 @@ Authify Team
 
 GitHub: @gauravquest00-create
 
+<div align="center">
+Made with ❤️ by Authify Team
+
+https://img.shields.io/github/stars/gauravquest00-create/Authify
+https://img.shields.io/github/forks/gauravquest00-create/Authify
+
+Live Demo: https://authify-zeta.vercel.app
+
+</div> ```
