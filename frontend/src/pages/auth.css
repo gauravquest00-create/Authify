@@ -92,7 +92,7 @@ body.light {
   padding: 0;
 }
 
-/* ===== PAGE ===== */
+
 /* ===== PAGE ===== */
 .auth-page {
   width: 100%;
@@ -105,7 +105,7 @@ body.light {
   overflow: hidden;  /* ← no scroll */
 }
 
-/* Page background glow - adjust karo */
+/* Page background glow - adjust  */
 .auth-page::before {
   content: '';
   position: absolute;
@@ -123,12 +123,12 @@ body.light .auth-page::before {
     radial-gradient(ellipse 40% 40% at 82% 20%, rgba(109,40,217,0.03) 0%, transparent 65%);
 }
 
-/* ===== CARD ===== */
+
 /* ===== CARD ===== */
 .auth-card {
   width: 100%;
   max-width: 1100px;
-  max-height: 95vh;  /* ← height limit, center mein ayega */
+  max-height: 95vh;  /*height limit */
   min-height: auto;
   display: flex;
   background: var(--auth-bg-card);
@@ -142,12 +142,12 @@ body.light .auth-page::before {
 /* ===== LEFT PANEL ===== */
 .auth-left {
   flex: 1;
-  padding: 28px 32px;  /* ← padding aur kam */
+  padding: 28px 32px;  
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* ← content vertically center */
+  justify-content: center;  
   min-width: 0;
-  overflow-y: hidden;  /* ← agar content zyada ho to scroll */
+  overflow-y: hidden;  
 }
 
 /* Optional: scrollbar hide but functional */
@@ -723,7 +723,7 @@ body.light .feature-desc {
   /* Left panel - adjust padding */
   .auth-left {
     border-radius: 24px;
-    padding: 20px 18px;  /* ← reduced padding */
+    padding: 20px 18px;  
     overflow-y: auto;  /* ← allow scroll if content overflows */
     overflow-x: hidden;
     position: relative;
@@ -764,7 +764,7 @@ body.light .feature-desc {
   }
   
   .auth-heading h1 {
-    font-size: 22px;  /* ← smaller */
+    font-size: 22px;  
   }
   
   .auth-heading p {
@@ -953,7 +953,7 @@ body.light .feature-desc {
   }
 }
 
-/* Success message - add to your existing auth.css */
+/* Success message  */
 .auth-success {
   background: rgba(34, 197, 94, 0.12);
   border: 1px solid rgba(34, 197, 94, 0.3);
@@ -972,7 +972,7 @@ body.light .auth-success {
 }
 
 
-/* ===== DASHBOARD STYLES - Presentable ===== */
+/* ===== DASHBOARD STYLES ===== */
 .dash-wrapper {
   min-height: 100vh;
   width: 100%;
@@ -1216,7 +1216,7 @@ body.dark .dash-logout {
 
 
 
-/* Register page ke liye - 2 columns layout */
+/* Register page - 2 columns layout */
 .register-page .input-group-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
